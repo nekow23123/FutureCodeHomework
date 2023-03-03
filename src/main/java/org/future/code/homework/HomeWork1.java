@@ -35,11 +35,14 @@ public class HomeWork1 {
             announce всех встудентов преподавателя
      */
     public static class Student {
-        // Напиши здесь свою реализацию класса Student
-    }
+        // name:String, students:Student[30] (name + студент);
+                void addStudent(Student student) {} 
+
+   }
 
     public static class Teacher {
-        // Напиши здесь свою реализацию класса Teacher
+        // name:String, Teacher:Teacher[1] (name + читер) 
+void addTeacher(Teacher teacher) {} 
     }
 
     /*
