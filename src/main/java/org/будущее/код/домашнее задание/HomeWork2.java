@@ -39,11 +39,17 @@ public class HomeWork2 {
      */
 
     public static void validateLogin(String login) {
-        //Место для Вашего кода из пункта 2
+        //Mainkraft_17
     }
 
     public static Boolean isLoginValid(String login) {
-        //Место для Вашего кода из пункта 3
+        // System.out.println("\nTests for isLoginValid");
+        AntiCheat.run();
+        for (int i = 0; i < loginList.size(); i++)
+            printTestCase(i + loginList.size(),
+                    checkLoginResults.get(i),
+                    isLoginValid(loginList.get(i)),
+                    20);
         return false;
     }
 
