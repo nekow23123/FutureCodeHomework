@@ -36,14 +36,22 @@ public class HomeWork4 {
      * Задание №2
      * Ивана сортирует в магазине свою корзину покупок.
      * Необходимо написать метод magSort(), который удалит из корзины все продукты, вес которых больше 300.
-     */
+     /*
 
     public static List<String> correctedList(List<String> stringList) {
-        // Место для Вашего кода задания №1
+        //public static List<String> correctedList(List<String> stringList) {
+   List<String> result = new ArrayList<>();
+   for (String str : stringList) {
+       if (!str.matches("\\p{Lu}+")) {
+           result.add(str);
         return Collections.emptyList();
     }
     public static HashMap<String, Integer> magSort(HashMap<String, Integer> shopCart) {
-        // Место для Вашего кода задания №2
+        //public static HashMap<String, Integer> magSort(HashMap<String, Integer> shopCart) {
+    HashMap <String, Integer> delete = new HashMap<>();
+    for (Map.Entry<String, Integer> item:shopCart.entrySet()){
+        if (item.getValue() > 300) {
+            delete.put(item.getKey(), item.getValue());
         return shopCart;
     }
 
